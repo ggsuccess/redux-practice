@@ -17,8 +17,8 @@ const Todos = ({
   onInsert,
   onToggle,
   onRemove,
-})=>{
-  const onSubmit =e=>{
+}) => {
+  const onSubmit = e => {
     e.preventDefault();
   };
   return (
@@ -35,7 +35,7 @@ const Todos = ({
         <TodoItem />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Todos;
