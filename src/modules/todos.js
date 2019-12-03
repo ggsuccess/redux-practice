@@ -1,7 +1,7 @@
 const CHANGE_INPUT = 'todos/CHANGE_INPUT'; // 인풋 값을 변경함
-const INSERT = 'todos/INSERT'; //새로운 todo를 등록함
-const TOGGLE = 'todos/TOGGLE'; //todo를 체크/체크해제함
-const REMOVE = 'todos/REMOVE'; //todo를 제거함
+const INSERT = 'todos/INSERT'; // 새로운 todo를 등록함
+const TOGGLE = 'todos/TOGGLE'; // todo를 체크/체크해제함
+const REMOVE = 'todos/REMOVE'; // todo를 제거함
 
 export const changeInput = input => ({
   type: CHANGE_INPUT,
@@ -65,7 +65,7 @@ function todos(state = initialState, action) {
     case REMOVE:
       return {
         ...state,
-        todos: state.todos.filter(todo => todo.id !== action.id)
+        todos: state.todos.filter(todo => todo.id !== action.id),
       };
     default:
       return state;
