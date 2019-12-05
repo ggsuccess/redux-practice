@@ -48,7 +48,7 @@ const todos = handleActions(
     }),
     [REMOVE]: (state, action) => ({
       ...state,
-      todos: state.todos.filter(todo => todo.id !== action.id),
+      todos: state.todos.filter(todo => todo.id !== action.payload),
     }),
   },
   initialState,
